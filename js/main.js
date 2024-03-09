@@ -1,4 +1,31 @@
 
+(async () => {
+    const { value: email } = await Swal.fire({
+      title: "Suscribite a nuestro Newsletter",
+      input: "email",
+      inputLabel: "Ingresa tu email",
+      inputPlaceholder: "Te suscribiste exitosamente!",
+    });
+    if (email) {
+      Swal.fire(`Entered email: ${email}`);
+    }
+  })
+
+ function agregadoSesiones(){
+    setTimeout(() => {
+        document.getElementsByClassName("btn btn-outline-secondary").className= "btn btn-outline-secondary";
+        document.getElementsByClassName("btn btn-outline-secondary").innerHTML= "Sesion agregada!";
+    }, 3000);
+  }
+  document.addEventListener("click", agregadoSesiones);
+
+  const evento = () => {
+    return new Promise((resolve, reject) => {
+        resolve(2000);
+    })
+  }
+
+
 const Productos = [
     {id:1, nombre: "Reiki Usui", Duracion:1, precio:6500},
     {id:2, nombre: "Karmic Reiki", Duracion:1, precio:7800},
