@@ -33,6 +33,12 @@
                       <span id="totalCarrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./paginas/sesiones.html" onclick="verProductosPorCategoria"(distancia)>A distancia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./paginas/sesiones.html" onclick="verProductosPorCategoria"(presencial)>Presencial</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -65,8 +71,10 @@
           <div>
             <a href="https://wa.me/?text=urlencodedtext." target="_blank"><img src="./imagenes-media/logo-wsp.png" alt="whatsapp" class="whatsapp"></a>
         </div>
+        <div id="productos" class="row"></div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
