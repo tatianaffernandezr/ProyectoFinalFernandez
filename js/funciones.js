@@ -40,4 +40,3 @@ const obtenerProductoLS = () => {
 
     return producto;
 }
-guardarProductosLS(productos);
